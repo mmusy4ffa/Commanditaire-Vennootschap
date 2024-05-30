@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- Google Font (Kustomisasi Font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +23,7 @@
     />
   </head>
 
-  <body class="bg-light" style="font-family: Nunito, sans-serif">
+  <body class="bg-body-light" style="font-family: Nunito, sans-serif">
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm bg-white"
     >
@@ -66,6 +69,12 @@
           </div>
         </div>
       </div>
+      <button
+        id="theme-toggle"
+        class="btn btn-link text-body me-5 navbar-brand"
+      >
+        <i id="theme-icon" class="bi bi-sun-fill"></i>
+      </button>
     </nav>
 
     <div class="pt-4"></div>
@@ -101,7 +110,7 @@
             <div class="row">
               <h3 class="mb-3">Riwayat Pendidikan</h3>
               <div class="col-md-12 mb-3">
-                <div class="card shadow-sm border-0 rounded-4">
+                <div class="card shadow-sm border-0 rounded-4 bg-body-tertiary">
                   <div class="card-body">
                     <span class="badge bg-primary">2023 - Sekarang</span>
                     <h5 class="mt-2 mb-0">Politeknik Negeri Banyuwangi</h5>
@@ -110,19 +119,25 @@
                     </p>
                     <div class="mt-2">
                       <p class="mb-1">Mata Kuliah yang saya ikuti :</p>
-                      <span class="badge text-bg-light">Pemrograman Web</span>
-                      <span class="badge text-bg-light">Basis Data</span>
-                      <span class="badge text-bg-light"
+                      <span class="badge text-body bg-body-secondary"
+                        >Pemrograman Web</span
+                      >
+                      <span class="badge text-body bg-body-secondary"
+                        >Basis Data</span
+                      >
+                      <span class="badge text-body bg-body-secondary"
                         >Algoritma Struktur Data</span
                       >
-                      <span class="badge text-bg-light">Bahasa Inggris</span>
+                      <span class="badge text-body bg-body-secondary"
+                        >Bahasa Inggris</span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="col-md-12 mb-3">
-                <div class="card shadow-sm border-0 rounded-4">
+                <div class="card shadow-sm border-0 rounded-4 bg-body-tertiary">
                   <div class="card-body">
                     <span class="badge bg-primary">2019 - 2022</span>
                     <h5 class="mt-2 mb-0">SMA Negeri 1 Genteng</h5>
@@ -132,13 +147,15 @@
 
                     <div class="mt-2">
                       <p class="mb-1">Mata Kuliah yang saya ikuti :</p>
-                      <span class="badge text-bg-light"
+                      <span class="badge text-body bg-body-secondary"
                         >Ilmu Pengetahuan Sejarah</span
                       >
-                      <span class="badge text-bg-light"
+                      <span class="badge text-body bg-body-secondary"
                         >Pendidikan Kewarganegaraan</span
                       >
-                      <span class="badge text-bg-light">Sejarah Minat</span>
+                      <span class="badge text-body bg-body-secondary"
+                        >Sejarah Minat</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -151,7 +168,7 @@
               <!-- Contoh: Pengalaman Kerja, Pengalaman Sukarelawan, Magang, Organisasi, dll. -->
 
               <div class="col-md-12 mb-3">
-                <div class="card shadow-sm border-0 rounded-4">
+                <div class="card shadow-sm border-0 rounded-4 bg-body-tertiary">
                   <div class="card-body">
                     <span class="badge bg-secondary">2023 - Sekarang</span>
                     <h5 class="mt-2 mb-0"><b>Unity Engine</b></h5>
@@ -174,23 +191,31 @@
     </section>
 
     <!-- KEAHLIAN DAN KURSUS -->
-    <section class="my-5 py-5 bg-white" id="keahlian">
+    <section class="my-5 py-5 bg-body-tertiary" id="keahlian">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h3 class="mb-3">Keahlian</h3>
             <!-- Keahlian atau skill yang kamu bisa atau kuasai -->
 
-            <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-primary text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Web Development (HTML, CSS, Tawilwind CSS)
             </a>
-            <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-primary text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Design UI di Figma
             </a>
-            <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-primary text-body bg-body-secondary text-start mb-2 me-1"
+            >
               C# Language
             </a>
-            <a class="btn btn-primary text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-primary text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Microsoft Office (Word, Powerpoint)
             </a>
           </div>
@@ -212,19 +237,29 @@
             <h3 class="mb-3">Ketertarikan</h3>
             <!-- Ketertarikan terkait industri yang kamu tuju seperti profesi, bidang, atau yang lain -->
 
-            <a class="btn btn-success text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-success text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Software Development
             </a>
-            <a class="btn btn-success text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-success text-body bg-body-secondary text-start mb-2 me-1"
+            >
               UI/UX Design
             </a>
-            <a class="btn btn-success text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-success text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Game Developer
             </a>
-            <a class="btn btn-success text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-success text-body bg-body-secondary text-start mb-2 me-1"
+            >
               2D Animation
             </a>
-            <a class="btn btn-success text-bg-light text-start mb-2 me-1">
+            <a
+              class="btn btn-success text-body bg-body-secondary text-start mb-2 me-1"
+            >
               Front End
             </a>
           </div>
@@ -265,12 +300,12 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark py-3">
+    <footer class="bg-body-secondary py-3">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="text-white mb-0">
-              Copyright &copy; 2024 - <b>Rahmat Ramadhan Putra</b>
+            <p class="text-white text-body mb-0">
+              Copyright &copy; 2024 - <b>Muhammad Musyaffa</b>
             </p>
           </div>
         </div>
@@ -362,5 +397,7 @@
         });
       });
     </script>
+
+    <script src="dark.js"></script>
   </body>
 </html>
